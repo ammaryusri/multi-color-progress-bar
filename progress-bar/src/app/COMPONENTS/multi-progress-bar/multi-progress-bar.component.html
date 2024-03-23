@@ -1,0 +1,7 @@
+<div class="progress-bar">
+    <div class="inner-bars-container">
+        <div class="inner-bar" *ngFor="let item of colorWeighage; let i = index"
+            [style.flex]="calculateFlex(item.weighage)" [style.background]="item.color"
+            [style.z-index]="calculateZIndex(i)"></div>
+    </div>
+</div>
