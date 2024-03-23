@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-multi-progress-bar',
-  templateUrl: './multi-progress-bar.component.html',
-  styleUrls: ['./multi-progress-bar.component.css'],
+  selector: 'lib-color-progress-bar',
+  templateUrl: './color-progress-bar.component.html',
+  styleUrls: ['./color-progress-bar.component.css'],
 })
-export class MultiProgressBarComponent {
+export class ColorProgressBarComponent {
   @Input() colorWeighage: { color: string; weighage: number }[] = [];
 
   calculateFlex(weighage: number): number {
